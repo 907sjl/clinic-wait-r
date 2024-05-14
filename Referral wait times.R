@@ -377,8 +377,8 @@ create_performance_visuals <- function(source_tbl, file_label, end_date, window_
 # MAIN 
 
 ## Get data
-end_date <- as.Date('2024-05-01') 
-window_size <- 91
+end_date <- as.Date('2023-10-01') 
+window_size <- 364
 source_dta <- refresh_data(end_date, window_size) 
 referral_dta <- source_dta$referrals
 referral_tbl <- as_tibble(referral_dta)
@@ -448,7 +448,7 @@ p <- ggplot(months_tbl, aes(x=months_v, y=Urgent_Var_Pct)) +
   geom_point(color="#4575B4", size=3.5, shape=16) + 
   geom_text(aes(label=Urgent_Count, vjust=Urgent_Vjust), size=3.5, color="#494949") + 
   annotate("text", x=min(months_v), y=0, label=urgent_zero_annotation, color="#494949", vjust=-1, hjust=-0.25) + 
-  annotate("text", x=min(months_v), y=-0.22, label=urgent_full_annotation, color="#494949", hjust=-.05) + 
+  annotate("text", x=min(months_v), y=-0.24, label=urgent_full_annotation, color="#494949", hjust=-.05) + 
   scale_y_continuous(breaks=round(seq(-0.25, 0.25, length.out=11), 2), labels=scales::percent, limits=c(-0.25, 0.25)) +
   scale_x_date(breaks=months_v, labels=date_format("%Y-%b")) +
   labs(title="Monthly Urgent Referral Volume with Over/Under %",
@@ -478,8 +478,8 @@ p <- ggplot(months_tbl, aes(x=months_v, y=Routine_Var_Pct)) +
   geom_line(aes(y=0), size=1.25, color="#696969") + 
   geom_point(color="#4575B4", size=3.5, shape=16) + 
   geom_text(aes(label=format(Routine_Count, big.mark=","), vjust=Routine_Vjust), size=3.5, color="#494949") + 
-  annotate("text", x=min(months_v), y=0, label=routine_zero_annotation, color="#494949", vjust=1.6, hjust=-0.25) + 
-  annotate("text", x=min(months_v), y=-0.22, label=routine_full_annotation, color="#494949", hjust=-.05) + 
+  annotate("text", x=min(months_v), y=0, label=routine_zero_annotation, color="#494949", vjust=-1, hjust=-0.25) + 
+  annotate("text", x=min(months_v), y=-0.24, label=routine_full_annotation, color="#494949", hjust=-.05) + 
   scale_y_continuous(breaks=round(seq(-0.25, 0.25, length.out=11), 2), labels=scales::percent, limits=c(-0.25, 0.25)) +
   scale_x_date(breaks=months_v, labels=date_format("%Y-%b")) +
   labs(title="Monthly Routine Referral Volume with Over/Under %",
