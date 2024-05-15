@@ -37,7 +37,7 @@ Both files represent datasets that would have been loaded into R using SQL and a
 The R script loads the source data, transforms it into reporting level information, and generates these visuals within SVG files.    
 
 ### Overall referral conversion rate curve    
-<img src="/images/urgent_seen_curve_by_days_364_2023_09_30.svg?raw=true" alt="SVG image: overall rate curve by day"/>    
+<img src="images/urgent_seen_curve_by_days_364_2023_09_30.svg?raw=true" alt="SVG image: overall rate curve by day"/>    
 
 The rate curve is a line chart showing the percent of referrals seen by days waited. All referrals are aged 90 days from the date that they were originally sent 
 to the clinic and then reported. This is to create a consistent denominator population of referrals were every referral had the same opportunity to be scheduled 
