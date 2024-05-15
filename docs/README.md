@@ -37,7 +37,7 @@ Both files represent datasets that would have been loaded into R using SQL and a
 The R script loads the source data, transforms it into reporting level information, and generates these visuals within SVG files.    
 
 ### Overall referral conversion rate curve    
-<img src="../images/urgent_seen_curve_by_days_364_2023_09_30.svg?raw=true" alt="SVG image: overall rate curve by day"/>    
+<img src="images/urgent_seen_curve_by_days_364_2023_09_30.svg?raw=true" alt="SVG image: overall rate curve by day"/>    
 
 The rate curve is a line chart showing the percent of referrals seen by days waited. All referrals are aged 90 days from the date that they were originally sent 
 to the clinic and then reported. This is to create a consistent denominator population of referrals were every referral had the same opportunity to be scheduled 
@@ -47,7 +47,7 @@ Bars behind the line show the relative number of referrals for each day of wait.
 curve.    
 
 ### Clinic referral conversion rate dumbbells    
-<img src="../images/urgent_seen_dumbells_by_clinic_364_2023_09_30.svg?raw=true" alt="SVG image: dumbbell chart by clinic"/>    
+<img src="images/urgent_seen_dumbells_by_clinic_364_2023_09_30.svg?raw=true" alt="SVG image: dumbbell chart by clinic"/>    
 
 A dumbbell style scatter plot breaks out the rate curves by clinic. Each clinic on the y-axis has data points for the 50th, 60th, 70th, 80th, and 90th quantiles 
 with a line connecting them to more readily communicate the range of wait times between those quantiles. An annotation calls attention to the 90-day wait time 
@@ -57,7 +57,7 @@ This visual places every clinic on one chart while still allowing the viewer to 
 provides more precise information.    
 
 ### Clinic referral conversion rate waffle    
-<img src="../images/urgent_seen_waffle_by_days_and_clinic_364_2023_09_30.svg?raw=true" alt="SVG image: waffle chart by clinic"/>    
+<img src="images/urgent_seen_waffle_by_days_and_clinic_364_2023_09_30.svg?raw=true" alt="SVG image: waffle chart by clinic"/>    
 
 This chart provides more precise numerical data at the expense of readability. It is a crosstab table with clinics on the y-axis and days of wait time on the x-axis. 
 Table cells at the intersection of each display the associated quantile of referrals. Blue-tone shading highlights the quantile range starting at 50% with darker 
@@ -65,14 +65,14 @@ shading for higher percentages. The clinics are sorted in descending order of ov
 worst.    
 
 ### Referral volume by clinic    
-<img src="../images/urgent_volume_by_clinic_364_2023_09_30.svg?raw=true" alt="SVG image: chart of referral volumes by clinic"/>    
+<img src="images/urgent_volume_by_clinic_364_2023_09_30.svg?raw=true" alt="SVG image: chart of referral volumes by clinic"/>    
 
 Horizontal lines illustrate the number of referrals in the denominators for each clinic. Each clinic's percent of the grand total is displayed by a label next to 
 the clinic name. This visual provides some context as to which clinic are moving the overall conversion rates and which clinics are not. It also shows clinics 
 with the fewest referrals, hinting at which clinic percentages are most likely to be affected by outliers.    
 
 ### Overall referral volume by month    
-<img src="../images/urgent_monthly_volume.svg?raw=true" alt="SVG image: chart of referral volumes by month"/>    
+<img src="images/urgent_monthly_volume.svg?raw=true" alt="SVG image: chart of referral volumes by month"/>    
 
 A lollipop style chart displays the number of referrals sent per month in terms of their variance from the annualized average. The y-axis is the percent of variance from the 
 average. The exact number of referrals each month is displayed in a data label. This view shows both the magnitude of referrals that require clinic staff to decide on 
