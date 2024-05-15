@@ -1,0 +1,41 @@
+---
+---
+
+@import "{{ site.theme }}";
+img.circleme { 
+  display: block; 
+  width: 65%; 
+  margin-left: auto;
+  margin-right: auto; 
+  margin-bottom: 16px; 
+}
+
+header.smallertext { 
+  font: 12px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header.moreheader { 
+  width: 300px; 
+}
+
+section.morecontent {
+  width: 600px; 
+} 
+
+div.tocitem { 
+  margin-bottom: 5px; 
+  margin-left: 10px;
+}
+
+div.tocitemlast { 
+  margin-bottom: 20px; 
+  margin-left: 10px;
+}
+
+div.tocgroup div:nth-child(2) { 
+  margin-top: 5px; 
+}
+
+div.tocsingleton { 
+  margin-bottom: 20px; 
+}
