@@ -36,7 +36,7 @@ Both files represent datasets that would have been loaded into R using SQL and a
 ## Visuals    
 The R script loads the source data, transforms it into reporting level information, and generates these visuals within SVG files.    
 
-### Overall referral conversion rate curve    
+### Overall conversion rate curve    
 <img src="images/urgent_seen_curve_by_days_364_2023_09_30.svg?raw=true" alt="SVG image: overall rate curve by day"/>    
 
 The rate curve is a line chart showing the percent of referrals seen by days waited. All referrals are aged 90 days from the date that they were originally sent 
@@ -46,7 +46,7 @@ and the patient seen within a reasonable time. The wait times for reach referral
 Bars behind the line show the relative number of referrals for each day of wait. This creates a histogram displaying the weighting of referrals across the 
 curve.    
 
-### Clinic referral conversion rate dumbbells    
+### Clinic conversion rate dumbbells    
 <img src="images/urgent_seen_dumbells_by_clinic_364_2023_09_30.svg?raw=true" alt="SVG image: dumbbell chart by clinic"/>    
 
 A dumbbell style scatter plot breaks out the rate curves by clinic. Each clinic on the y-axis has data points for the 50th, 60th, 70th, 80th, and 90th quantiles 
@@ -56,7 +56,7 @@ point on the x-axis as a visual indication of where the reasonable wait time ran
 This visual places every clinic on one chart while still allowing the viewer to readily see the relative performance of one compared to another. The next visual 
 provides more precise information.    
 
-### Clinic referral conversion rate waffle    
+### Clinic conversion rate waffle    
 <img src="images/urgent_seen_waffle_by_days_and_clinic_364_2023_09_30.svg?raw=true" alt="SVG image: waffle chart by clinic"/>    
 
 This chart provides more precise numerical data at the expense of readability. It is a crosstab table with clinics on the y-axis and days of wait time on the x-axis. 
